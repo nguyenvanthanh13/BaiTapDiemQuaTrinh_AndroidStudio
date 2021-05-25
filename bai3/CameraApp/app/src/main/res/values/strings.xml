@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CameraApp</string>
+    <string name="notify_string">Notifycation</string>
+    <string name="intent_received_string">Intent</string>
+    <string name="channel_name">NotificationChannel1</string>
+    <string name="channel_description">Notificationchannel1 app</string>
+</resources>

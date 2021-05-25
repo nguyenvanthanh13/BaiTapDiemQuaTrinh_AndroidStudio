@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/Icon"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"></ImageView>
+
+<!--    Big Ccenter Layout-->
+    <LinearLayout
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Icon"
+        android:layout_marginTop="10dp">
+<!-- ===================================================================================================-->
+<!--        Size and tor Layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!--    Size-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:paddingHorizontal="50dp"
+                    android:text="Size"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/rbGroupS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Large"
+                        android:textSize="12sp"/>
+
+                    <RadioButton
+                        android:id="@+id/rbMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Medium"
+                        android:textSize="12sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--    Tortilla-->
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:paddingHorizontal="50dp"
+                    android:text="Tortilla"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/rbGroupT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbCorn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Corn"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFlour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flour"
+                        android:textSize="12sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+<!--         End Size Layout-->
+
+<!-- ===================================================================================================-->
+
+        <!--        Filling Layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+<!--            text-->
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:paddingVertical="3dp"
+                    android:text="Fillings"
+                    android:textSize="20sp" />
+
+<!--            End text-->
+
+<!--            Layout lIst Choice-->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:weightSum="2">
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:text="Beef"
+                        android:id="@+id/cb_beef"/>
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:text="Rice"
+                        android:id="@+id/cb_rice"/>
+                </TableRow>
+
+                <TableRow
+                    android:weightSum="2">
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:text="Chicken"
+                        android:id="@+id/cb_chicken"/>
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:text="Beans"
+                        android:id="@+id/cb_beans"/>
+                </TableRow>
+
+                <TableRow
+                    android:weightSum="2">
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:text="White Fish"
+                        android:id="@+id/cb_whiteFish"/>
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:text="Pico de Gallo"
+                        android:id="@+id/cb_pico"/>
+                </TableRow>
+
+                <TableRow
+                    android:weightSum="2">
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:text="Cheese"
+                        android:id="@+id/cb_cheese"/>
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:text="Guacamole"
+                        android:id="@+id/cb_Guacamle"/>
+                </TableRow>
+
+                <TableRow
+                    android:weightSum="2">
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:text="Sea Food"
+                        android:id="@+id/cb_seaFood"/>
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:text="LBT"
+                        android:id="@+id/cb_lbt"/>
+                </TableRow>
+            </TableLayout>
+<!--            End List Choice-->
+
+        </LinearLayout>
+<!--      End Filling Layout-->
+
+<!-- ===================================================================================================-->
+
+<!--        Beverage Layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--            text-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:gravity="center_horizontal"
+                android:paddingVertical="3dp"
+                android:text="Beverage"
+                android:textSize="20sp" />
+            <!--            End text-->
+
+            <!--            Layout lIst Choice-->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:weightSum="2">
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:text="Soda"
+                        android:id="@+id/cb_soda"/>
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:text="Margarita"
+                        android:id="@+id/cb_margarita"/>
+                </TableRow>
+
+                <TableRow
+                    android:weightSum="2">
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:text="Cerveza"
+                        android:id="@+id/cb_cerveza"/>
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:text="Tequila"
+                        android:id="@+id/cb_tequila"/>
+                </TableRow>
+            </TableLayout>
+            <!--            End List Choice-->
+
+        </LinearLayout>
+<!--      End Beverage Layout-->
+
+<!-- ===================================================================================================-->
+
+<!--        Button -->
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btn_placeorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place Your Order"
+            android:textAllCaps="false"
+        />
+<!--        End Big Center layout-->
+    </LinearLayout>
+<!--        End Big Center layout-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

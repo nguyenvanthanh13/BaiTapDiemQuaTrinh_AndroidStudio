@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Nation Infor</string>
+    <string name="NationOne">Nation One</string>
+    <string name="NationTwo">Nation Two</string>
+    <string name="Submit">Convert</string>
+    <string name="Res">Res: </string>
+    <string name="input">Input: </string>
+</resources>
